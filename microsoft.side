@@ -1,0 +1,56 @@
+{
+  "id": "e2933100-f894-4b54-9f01-0499fd1191c9",
+  "version": "2.0",
+  "name": "Microsoft",
+  "url": "https://arxiv.org/search/?query=generative+ai&searchtype=all&abstracts=hide&order=-announced_date_first&size=50&start=0",
+  "tests": [{
+    "id": "982a06b4-3aa4-4cc2-aaac-94064c02246d",
+    "name": "pdf",
+    "commands": [{
+      "id": "f0072aec-3481-4f04-9f71-c6a18a6a3ad3",
+      "comment": "",
+      "command": "open",
+      "target": "https://arxiv.org/search/?query=generative+ai&searchtype=all&abstracts=hide&order=-announced_date_first&size=50&start=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19bf9fdb-f3b5-4218-acf4-dfd7923752e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1141x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cde364bd-218f-4a5b-9943-57c4d8d0a6af",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.arxiv-result:first-child span:nth-child(2) a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95603251-fcf3-4f6b-a594-70dc015b0980",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "css=.arxiv-result:first-child span:nth-child(2) a @href ",
+      "targets": [],
+      "value": "pdfUrl"
+    }, {
+      "id": "550624f1-0fea-4252-8108-575b17fcb7a3",
+      "comment": "",
+      "command": "open",
+      "target": "${pdfUrl}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "261cbf78-2b42-41a2-86af-9ae59f29d56f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.india.gov.in/", "https://arxiv.org/search/?query=generative+ai&searchtype=all&abstracts=hide&order=-announced_date_first&size=50&start=0"],
+  "plugins": []
+}
